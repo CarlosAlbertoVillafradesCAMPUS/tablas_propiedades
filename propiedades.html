@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1 style="text-align: center">Propiedades de fuentes</h1>
+  </head>
+  <body>
+    <h1 style="text-align: center">Propiedades de Imagenes</h1>
     <p>
-        <strong>font-style</strong>---esta propiedad define el estilo del texto. Dentro de estas propiedades para fuentes en CSS existen los estilos normal, italic y oblique
-        <p style="text-align: center; font-style: oblique;">font-style</p>  
+      <strong>object-fit</strong>---nos va a permitir cambiar el modo en el que
+      se rellena una imagen
+    </p>
+    <img
+      src="./Color-morado.jpg"
+      alt="img"
+      style="width: 200px; height: 200px; object-fit:scale-down"
+    />
+    <p>
+      <strong>object-position<object-posi></object-posi></strong>--- que nos sirve para utilizar junto a la propiedad object-fit y cambiar la posición donde aparece la imagen
+    </p>
+    <img
+      src="./Color-morado.jpg"
+      alt="img"
+      style="width: 200px; height: 200px; object-fit: cover; object-position: left 20% top 25%;"
+    />
+    <p>
+      <strong>image-rendering</strong>---permite indicar al navegador como se debería renderizar una imagen, y más concretamente, que algoritmo de reescalado se debería aplicar.
+    </p>
+    <img
+      src="./Color-morado.jpg"
+      alt="img"
+      style="width: 200px; height: 200px; image-rendering:pixelated; "
+    />
+    <p>
+      <strong>image-orientation</strong>---permite rotar una imagen respecto a la información que se encuentra en sus metadatos
+    </p>
+    <img
+      src="./Color-morado.jpg"
+      alt="img"
+      style="width: 200px; height: 200px; image-orientation:flip;"
+    />
+    <p>
+      <strong>aspect-ratio</strong>---permite cambiar la proporción de aspecto entre los valores width y height de una imagen u objeto desde CSS
     </p>
     <p>
-        <strong>font-variant</strong>---la propiedad font-variant define la variante de la letra. Esta propiedad solo tiene dos variantes: normal y small caps.
-        <p style="text-align: center; font-variant: small-caps;">font-variant</p>  
+      <strong></strong>---nos va a permitir cambiar el modo en el que
+      se rellena una imagen
     </p>
+    <img
+      src="./Color-morado.jpg"
+      alt="img"
+      style="width: 200px; height: 200px; background-size: cover;"
+    />
+
+    <h1 style="text-align: center">Propiedades de Background</h1>
     <p>
-        <strong>font-weight</strong>---esta propiedad define el peso de la letra, es decir, cómo de delgada o gruesa se verá la tipografía
-        <p style="text-align: center; font-weight: bold;">font-weight</p>  
+      <strong>background-image</strong>---Usando esta propiedad, podemos añadir imágenes a lo largo de nuestra hoja de estilos.
     </p>
+    <div style="width: 200px; height: 200px; background-image: url(./Color-morado.jpg);"></div>
     <p>
-        <strong>font-size</strong>---esta propiedad define el tamaño de la fuente.
-        <p style="text-align: center; font-size: 2em;">font-size</p>  
-    </p>
-    <p>
-        <strong>font-family</strong>---esta propiedad representa la familia de la fuente, es decir, la tipografía que estamos usando en el elemento.
-        <p style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">font-family</p>  
-    </p>
-    <p>
-        <strong>font-stretch</strong>---permite elegir que un tipo de letra más o menos condensado o expandido.
-        <p style="text-align: center; font-stretch:extra-condensed;">font-stretch</p>  
-    </p>
-    <p>
-        <strong>font-variant-numeric</strong>---permite mostrar números con formatos especiales
-        <p style="text-align: center; font-variant-numeric: oldstyle-nums;">0123456</p>  
-    </p>
-    <p>
-        <strong>font-variant-position</strong>---permite elegir la posición del carácter. Admite los valores normal, sub y super.
-        <p style="text-align: center; font-variant-position:initial;">font-variant-position</p>  
-    </p>
-    <p>
-        <strong>font-synthesis</strong>---Admite los valores none, weight y style
-        <p style="text-align: center; font-synthesis:small caps;">font-synthesis</p>  
-    </p>
-</body>
+        <strong>background-size</strong>---Podemos ajustar el tamaño de una imagen usando la propiedad
+      </p>
+      <div style="width: 200px; height: 200px; background-image: url(./Color-morado.jpg); background-size: cover;"></div>
+      <p>
+        <strong>background-repeat</strong>---Esta propiedad nos permite repetir la imagen múltiples veces
+      </p>
+      <div style="width: 200px; height: 200px; background-image: url(./Color-morado.jpg); background-size: 40px; background-repeat: repeat;">
+</div>
+      <p>
+        <strong>background-position</strong>---Esta propiedad es usada para cambiar la posición de la imagen en la pantalla.
+      </p>
+      <div style="width: 200px; height: 200px; background-image: url(./Color-morado.jpg);"></div>
+      <p>
+        <strong>background-attachment</strong>---Esta propiedad nos permite manejar el comportamiento de nuestro contenido e imagen cuando hacemos scroll.
+      </p>
+      <div style="width: 200px; height: 200px; background-image: url(./Color-morado.jpg); background-attachment: scroll;"></div>
+      <p>
+        <strong>background-color</strong>---Esta propiedad es usada para cambiar el color de nuestro fondo.
+      </p>
+      <div style="width: 200px; height: 200px; background-color: brown;"></div>
+  </body>
 </html>
